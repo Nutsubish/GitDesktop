@@ -1,0 +1,1 @@
+#Pythonze iyo Kahooti da yvelafei maqvs gaketebuli isedac 21 gakvetilamde full pythonia so check out it by yo self

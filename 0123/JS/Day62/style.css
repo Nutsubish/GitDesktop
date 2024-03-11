@@ -1,0 +1,8 @@
+.outer {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+.inner {
+    padding: 10px;
+    background-color: #c0c0c0;
+  }

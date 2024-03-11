@@ -1,0 +1,34 @@
+*{
+   margin: 0;
+   padding: 0;
+   
+}
+header{
+    background-color: red;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 19px;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+
+}
+
+/* 
+.container{
+    border:3px solid red;
+}
+
+.div{
+    border: 1px solid black;
+    padding: 19px;
+    background-color: red;
+    width: 100px;
+
+} */

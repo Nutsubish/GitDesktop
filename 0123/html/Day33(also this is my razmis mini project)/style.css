@@ -1,0 +1,14 @@
+body{
+    background-color: green
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    border: 20px solid black; 
+}
+
+.styled-table td {
+    padding: 15px;
+}
+

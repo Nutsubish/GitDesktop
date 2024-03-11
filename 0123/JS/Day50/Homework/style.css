@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(9, 255, 0);
+}
+
+
+form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: rgb(255, 0, 0);
+    padding: 100vh;
+  }
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+  }

@@ -1,0 +1,59 @@
+h1{
+    text-align: center;
+    color: green;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+
+    color: green;
+
+}
+
+footer{
+    
+    color: green;
+    
+    text-align: center;
+}
+
+p{
+    color: green;
+    font-size: large;
+    text-align: center;
+}
+
+section{
+    color: green;
+    font-size: large;
+    text-align: center;
+}
+
+body{
+    font-style: italic;
+}
+
+
+input{
+    background-color: black;
+    color: green;
+}
+
+button{
+    background-color: green;
+    color: black;
+    
+    
+}
+
+button:hover{
+    background-color: blue;
+}
+
+ul{
+    color: green;
+    text-align: center;
+}

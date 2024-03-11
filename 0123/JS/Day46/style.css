@@ -1,0 +1,12 @@
+.Content{
+    text-align: center;
+}
+
+.Photo{
+    margin: 0 auto;
+    display: block;
+}
+
+body{
+    background-color: green
+}

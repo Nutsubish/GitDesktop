@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>FaceNote</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Contact</h1>
+
+    <table>
+        <tr>
+            <td><input type="text" id="name" placeholder="Name"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="gmail" placeholder="Gmail"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="message" placeholder="Message"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit" onclick="clearFields()"></td>
+        </tr>
+    </table>
+    
+    <script>
+        function clearFields() {
+            document.getElementById("name").value = "";
+            document.getElementById("gmail").value = "";
+            document.getElementById("message").value = "";
+        }
+    </script>
+    
+</body>
+</html>

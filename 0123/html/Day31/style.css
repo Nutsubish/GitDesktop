@@ -1,0 +1,42 @@
+p{
+    color:rgb(red, green, blue)
+}
+
+
+
+h1{
+    color:rgb(red, green, blue)
+}
+
+h2{
+    color: greenyellow
+}
+
+img{
+    box-align:baseline
+}
+
+img{
+    box-align:baseline
+}
+footer{
+    width:10cm
+}
+body {
+    background-color:black
+}
+
+header {
+    background-color: rgb(0,0 ,0); 
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+body {
+    color: greenyellow
+}
+
+button {
+    background-color: green
+}

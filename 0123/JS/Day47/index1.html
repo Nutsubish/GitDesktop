@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<button id="btn">Click</button>
+
+
+<p id="tgtpg">It Step>GOA</p>
+
+<script>
+    
+        let button = document.getElementById('btn');
+        let paragraph = document.getElementById('tgtpg');
+        function changeTextAndColor() {
+            let newText = "GOA>IT Step";
+            let newColor = "Yellow";
+            paragraph.textContent = newText;
+            paragraph.style.color = newColor;
+        }
+        button.addEventListener('click', changeTextAndColor);
+
+</script>
+
+</body>
+</html>
