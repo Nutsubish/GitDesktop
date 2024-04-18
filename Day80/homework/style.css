@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+}
+#maindiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#slider{
+    border: 3px red solid;
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+    display: grid;
+}
+#txt{
+    color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+#prev,#next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    padding: 10px;
+    font-size: large;
+}
+#prev{
+    margin-right: 195px;
+    margin-top: -45px;
+}
+
+#next{
+    margin-left: 195px;
+    margin-top: -45px;
+}

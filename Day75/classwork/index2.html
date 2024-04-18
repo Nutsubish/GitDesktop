@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .grid-container {
+            column-count: 3;
+            column-gap: 1em;
+        }
+
+        .grid-item {
+            display: grid;
+            grid-template-rows: auto;
+            grid-column: span 1;
+            margin-bottom: 1em;
+            background-color: #444;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        @media (min-width: 600px) {
+            .grid-item {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .grid-item {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: auto auto auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="grid-item" style="grid-row: span 2;">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item" style="grid-row: span 2;">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>
+</div>
+
+</body>
+</html>
