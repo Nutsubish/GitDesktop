@@ -15,18 +15,18 @@
 # print(person["name"])
 
 
-username= input("name: ")
-passcode= input("passcode: ")
+# username= input("name: ")
+# passcode= input("passcode: ")
 
-data = {
-    "name": username,
-    "passcode" : passcode,
-}
-for i in data:
-    if len(data[i]) >= 15:
-        print("too much")
-    elif len(data[i]) <= 4:
-        print("too less")
-    else:
-        print(data)
+# data = {
+#     "name": username,
+#     "passcode" : passcode,
+# }
+# for i in data:
+#     if len(data[i]) >= 15:
+#         print("too much")
+#     elif len(data[i]) <= 4:
+#         print("too less")
+#     else:
+#         print(data)
       
