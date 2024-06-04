@@ -1,118 +1,180 @@
-// const cars = ["red","blue","red","red"];
 
-// const allRed = cars.every(function(value){
-//     return allRed === value
-// });
-
-// function ManualEvery(cars, func){
-//     for(let i = 0; i < cars.length ; i++){
-//         const isTrue = func(cars[i]);
-//         if(isTrue === false){
-//             return false
-//         }
-//     }
-//     return true
-// }
-
-// const allRed = ManualEvery(cars, function(value){
-//     return value === "red"
-// })
-
-// console.log(allRed)  
-
-
-// const accounts = [
-//     {
-//         name : 'luka',
-//         age : 16
-//     },
-//     {
-//         name: 'nika',
-//         age: 13
-//     },
-//     {
-//         name : 'vaso',
-//         age: 18,
-//     },
-//     {
-//         name : 'vaso',
-//         age:21,
-//     },
-// ];
-
-// const everyadult = accounts.some(function(accounts){
-//     return accounts.age >= 18
-// });
-// console.log(everyadult)
-
-
-// const ManualFind = function(arr,func){
-//     for (let index = 0; index < arr.length; index++){
-//         const isTrue = func(arr[index])
-//         if(isTrue === true){
-//             return arr[index]
-//         }
-
-//     }
-// };
-
-
-// const FirstAdult = ManualFind(accounts, function(acc){
-//     return acc.age >= 18
-// });
-// console.log(FirstAdult)
+function manualEvery(array, forusing) {
+    for (let i = 0; i < array.length; i++) {
+        if (forusing(array[i]) === false) {
+            return false;
+        }
+    }
+    return true;
+}
 
 
 
-// const ToFindIndex = accounts.findIndex(function(accounts){
-//     return accounts.age >= 18
-// });
+function allNumbersPositive(array) {
+    return manualEvery(array, function(num) {
+        return num > 0;
+    });
+}
+
+function allStringsNonEmpty(array) {
+    return manualEvery(array, function(str) {
+        return str.length > 0;
+    });
+}
+
+
+function allBooleansTrue(array) {
+    return manualEvery(array, function(bool) {
+        return bool === true;
+    });
+}
+
+function allNumbersEven(array) {
+    return manualEvery(array, function(num) {
+        return num % 2 === 0;
+    });
+}
+
+
+function manualSome(array, forusing) {
+    for (let i = 0; i < array.length; i++) {
+        if (forusing(array[i]) === true) {
+            return true;
+        }
+    }
+    return false;
+}
 
 
 
-// const exactage = 18
 
-// const accounts = [
-//     {
-//         name : 'luka',
-//         age : 16
-//     },
-//     {
-//         name: 'nika',
-//         age: 13
-//     },
-//     {
-//         name : 'vaso',
-//         age: 18,
-//     },
-//     {
-//         name : 'vaso',
-//         age:21,
-//     },
-// ];
-
-// const exact = accounts.find(function(acc){
-//     return acc.age === exactage;
-// })
-
-// console.log(exact)
+function hasPassingGrades(array, passingGrade) {
+    return manualSome(array, function(grade) {
+        return grade > passingGrade;
+    });
+}
 
 
-// const fruits = ["Banana","Apple","Orange","Peach"]
+function containsAdminUsers(array) {
+    return manualSome(array, function(user) {
+        return user === 'admin';
+    });
+}
 
-// const [firstfruit, ...secondfruit] = fruits
-// console.log(...firstfruit, ... secondfruit)
+// ver gavige hasOverdueItems ras nishanvs Overdue
+
+
+function isPrime(num) {
+    if (num <= 1) return false;
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) return false;
+    }
+    return true;
+}
+
+function includesPrimeNumbers(array) {
+    return manualSome(array, function(num) {
+        return isPrime(num);
+    });
+}
 
 
 
-// const person = {
-//     name: "luka",
-//     money : 100,
-// }
-
-// const {money,name} = person
 
 
-// const cars = ["bmw","volvo","miniwen"];
-// const [...third] = cars
+function manualFind(array, forusing) {
+    for (let i = 0; i < array.length; i++) {
+        if (forusing(array[i]) === true) {
+            return array[i];
+        }
+    }
+    return undefined;
+}
 
+
+
+
+
+
+
+
+
+
+
+
+function findFirstNegativeNumber(array) {
+    return manualFind(array, function(num) {
+        return num < 0;
+    });
+}
+
+
+function findUserById(array, id) {
+    return manualFind(array, function(user) {
+        return user.id === id;
+    });
+}
+
+function findFirstIncompleteTask(array) {
+    return manualFind(array, function(task) {
+        return task === false;
+    });
+}
+
+
+
+function findProductByName(array, name) {
+    return manualFind(array, function(product) {
+        return product === name;
+    });
+}
+
+
+
+
+function manualFindIndex(array, forusing) {
+    for (let i = 0; i < array.length; i++) {
+        if (forusing(array[i]) === true) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+
+
+function findIndexOfFirstPrimeNumber(array) {
+    return manualFindIndex(array, function(num) {
+        return isPrime(num);
+    });
+}
+
+
+
+
+
+
+
+function findIndexOfUserWithAdminRole(array) {
+    return manualFindIndex(array, function(user) {
+        return user === 'admin';
+    });
+}
+
+
+
+function findIndexOfFirstOverdueItem(array) {
+    return manualFindIndex(array, function(item) {
+        return item === true;
+    });
+}
+
+
+
+
+
+function findIndexOfProductOutOfStock(array) {
+    return manualFindIndex(array, function(product) {
+        return product === false;
+    });
+}
