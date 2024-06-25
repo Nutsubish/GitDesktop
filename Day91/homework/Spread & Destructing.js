@@ -1,4 +1,4 @@
-// Spread
+ // Spread
 
 //1
 // const arr1 = [1, 2, 3];
