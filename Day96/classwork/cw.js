@@ -157,14 +157,14 @@
 
 //additional made by me  
 
-const promises = new Promise((resolve,reject)=>{
-    resolve("PROMISE IS GOATED")
-});
+// const promises = new Promise((resolve,reject)=>{
+//     resolve("PROMISE IS GOATED")
+// });
 
 
-promises
-    .then((string)=>{
-        const newstring = string.toLowerCase();
-        console.log(newstring)
-    });
+// promises
+//     .then((string)=>{
+//         const newstring = string.toLowerCase();
+//         console.log(newstring)
+//     });
     
